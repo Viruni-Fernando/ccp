@@ -81,7 +81,7 @@ const Home = () => {
                     onChange={handleChange}>
                     <option value="1">primary plan</option>
                     <option value="0">extended plan</option>
-                    <option value="1">premium plan</option>
+                    <option value="2">premium plan</option>
                   </select>
                 </div>
               </div>
@@ -100,9 +100,9 @@ const Home = () => {
                   >
                     <option value="1">Omnibus</option>
                     <option value="0">Truck</option>
-                    <option value="5">Dual Purpose</option>
-                    <option value="0">Passenger Car</option>
-                    <option value="1">Motorbike</option>
+                    <option value="2">Dual Purpose</option>
+                    <option value="3">Passenger Car</option>
+                    <option value="4">Motorbike</option>
                   </select>
                 </div>
               </div>
@@ -121,28 +121,28 @@ const Home = () => {
                   >
                     <option value="1">1</option>
                     <option value="0">2</option>
-                    <option value="1">3</option>
-                    <option value="0">4</option>
-                    <option value="1">5</option>
-                    <option value="0">6</option>
-                    <option value="1">7</option>
-                    <option value="0">8</option>
-                    <option value="1">9</option>
-                    <option value="0">10</option>
-                    <option value="1">11</option>
-                    <option value="0">12</option>
-                    <option value="1">13</option>
-                    <option value="0">14</option>
-                    <option value="1">15</option>
-                    <option value="0">16</option>
-                    <option value="1">17</option>
-                    <option value="0">18</option>
-                    <option value="1">19</option>
-                    <option value="0">20</option>
-                    <option value="1">21</option>
-                    <option value="0">22</option>
-                    <option value="1">23</option>
-                    <option value="0">24</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                    <option value="12">13</option>
+                    <option value="13">14</option>
+                    <option value="14">15</option>
+                    <option value="15">16</option>
+                    <option value="16">17</option>
+                    <option value="17">18</option>
+                    <option value="18">19</option>
+                    <option value="10">20</option>
+                    <option value="20">21</option>
+                    <option value="21">22</option>
+                    <option value="22">23</option>
+                    <option value="23">24</option>
                   </select>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Home = () => {
                   >
                     <option value="1">Month-to-Month</option>
                     <option value="0">One Year</option>
-                    <option value="1">Two Year</option>
+                    <option value="2">Two Year</option>
                   </select>
                 </div>
               </div>
@@ -180,9 +180,9 @@ const Home = () => {
                   >
                     <option value="1">New</option>
                     <option value="0">Modification</option>
-                    <option value="1">Renewal</option>
-                    <option value="0">Termination</option>
-                    <option value="1">Other</option>
+                    <option value="2">Renewal</option>
+                    <option value="3">Termination</option>
+                    <option value="4">Other</option>
                   </select>
                 </div>
               </div>
@@ -201,7 +201,7 @@ const Home = () => {
                   >
                     <option value="1">via the web</option>
                     <option value="0">contacting agent</option>
-                    <option value="1">customer call center</option>
+                    <option value="2">customer call center</option>
                   </select>
                 </div>
               </div>
@@ -295,11 +295,11 @@ const Home = () => {
                   >
                     <option value="1">Battaramulla</option>
                     <option value="0">Town Hall (City Office) </option>
-                    <option value="1">Galewela</option>
-                    <option value="0">Thanamalwila</option>
-                    <option value="1">Jaffna</option>
-                    <option value="0">Pettah (Kotahena)</option>
-                    <option value="1">Other</option>
+                    <option value="2">Galewela</option>
+                    <option value="3">Thanamalwila</option>
+                    <option value="4">Jaffna</option>
+                    <option value="5">Pettah (Kotahena)</option>
+                    <option value="6">Other</option>
                   </select>
                 </div>
               </div>
@@ -318,13 +318,13 @@ const Home = () => {
                   >
                     <option value="1">Western</option>
                     <option value="0">Central</option>
-                    <option value="1">Southern</option>
-                    <option value="0">Eastern</option>
-                    <option value="1">Northern</option>
-                    <option value="0">North Central </option>
-                    <option value="1">North Western </option>
-                    <option value="0">Uva</option>
-                    <option value="0">Sabaragamuwa</option>
+                    <option value="2">Southern</option>
+                    <option value="3">Eastern</option>
+                    <option value="4">Northern</option>
+                    <option value="5">North Central </option>
+                    <option value="6">North Western </option>
+                    <option value="7">Uva</option>
+                    <option value="8">Sabaragamuwa</option>
                   </select>
                 </div>
               </div>
@@ -342,13 +342,13 @@ const Home = () => {
                   >
                     <option value="1">Colombo</option>
                     <option value="0">Kurunegala</option>
-                    <option value="1">Gampaha</option>
-                    <option value="0">Kandy</option>
-                    <option value="1">Kalutara</option>
-                    <option value="0">Ratnapura</option>
-                    <option value="1">Kegalle </option>
-                    <option value="0">Anuradhapura</option>
-                    <option value="0">Other</option>
+                    <option value="2">Gampaha</option>
+                    <option value="3">Kandy</option>
+                    <option value="4">Kalutara</option>
+                    <option value="5">Ratnapura</option>
+                    <option value="6">Kegalle </option>
+                    <option value="7">Anuradhapura</option>
+                    <option value="8">Other</option>
                   </select>
                 </div>
               </div>
