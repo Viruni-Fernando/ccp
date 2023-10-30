@@ -68,7 +68,7 @@ const Home = () => {
 
           <div class="row">
             <div class="justify-content-center py-3 mt-2  w-50">
-              <div class="col-md-8 p-2 ">
+              <div style={{}} class="col-md-8 p-2 ">
                 <div class="form-group row">
                   <label class="fw-bolder w-50 mt-2" >
                     Type of Plan :
