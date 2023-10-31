@@ -551,6 +551,84 @@ const ChurnPrediction = () => {
       <div class="card w-75 container mt-6 form-container mt-5 mb-5 px-5 shadow-lg cardcol">
         <h2 class="mt-4">Customer churn Prediction </h2>
 
+        <div>
+          {/* Display the API response here */}
+          <p>Churn Probability: 25</p>
+          <p>Expected Lifetime Value:05</p>
+          <div>
+            {/* Display the plots using the URLs received from the API */}
+            {/* <img src={plotUrls.url_3} alt="Plot 1" />
+            <img src={plotUrls.url_1} alt="Plot 2" />
+            <img src={result.shap_plot} alt="Plot 3" />
+            <br />
+            <br />
+            <img src={plotUrls.url_2} alt="Plot 4" /> */}
+          </div>
+          <div>
+            {/* Display the plots using the URLs received from the API */}
+
+            <div className="row">
+              <div className="card w-50 p-4 mx-auto">
+                <img
+                  src={
+                    "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+                  }
+                  alt="Plot 1"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="card w-50 p-4">
+                <img
+                  src={
+                    "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+                  }
+                  alt="Plot 1"
+                />
+              </div>
+              <div className="card w-50 p-4">
+                <img
+                  src={
+                    "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+                  }
+                  alt="Plot 1"
+                />
+              </div>
+            </div>
+
+            <div className="card w-75 p-4 mx-auto">
+              <img
+                src={
+                  "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+                }
+                alt="Plot 1"
+              />
+            </div>
+
+            <img
+              src={
+                "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+              }
+              alt="Plot 2"
+            />
+            <img
+              src={
+                "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+              }
+              alt="Plot 3"
+            />
+            <br />
+            <br />
+            <img
+              src={
+                "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+              }
+              // src={`data:image/png;base64,${result.shap_plot}`}
+              alt="Plot 4"
+            />
+          </div>
+        </div>
+
         {result && (
           <div>
             {/* Display the API response here */}
@@ -582,7 +660,10 @@ const ChurnPrediction = () => {
               <br />
               <br />
               <img
-                src={`data:image/png;base64,${result.shap_plot}`}
+                src={
+                  "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/customer-churn-edit.jpeg"
+                }
+                // src={`data:image/png;base64,${result.shap_plot}`}
                 alt="Plot 4"
               />
             </div>
@@ -591,41 +672,83 @@ const ChurnPrediction = () => {
       </div>
 
       {result && (
-        <div>
-          {/* Display the API response here */}
-          <p>Churn Probability: {result.cltv}</p>
-          <p>Expected Lifetime Value: {result.expected_lifetime_value}</p>
-          <div>
-            {/* Display the plots using the URLs received from the API */}
-            <img src={plotUrls.url_3} alt="Plot 1" />
-            <img src={plotUrls.url_1} alt="Plot 2" />
-            <img src={result.shap_plot} alt="Plot 3" />
-            <br />
-            <br />
-            <img src={plotUrls.url_2} alt="Plot 4" />
-          </div>
-          <div>
-            {/* Display the plots using the URLs received from the API */}
-            <img
-              src={`data:image/png;base64,${result.gauge_plot}`}
-              alt="Plot 1"
-            />
-            <img
-              src={`data:image/png;base64,${result.hazard_plot}`}
-              alt="Plot 2"
-            />
-            <img
-              src={`data:image/png;base64,${result.survival_plot}`}
-              alt="Plot 3"
-            />
-            <br />
-            <br />
-            <img
-              src={`data:image/png;base64,${result.shap_plot}`}
-              alt="Plot 4"
-            />
-          </div>
+        <div class="card w-75 container mt-6 form-container mt-5 mb-5 px-5 shadow-lg cardcol">
+          <h2 class="mt-4">Customer churn Prediction </h2>
+
+          {result && (
+            <div>
+              {/* Display the API response here */}
+              <p>Churn Probability: {result.cltv}</p>
+              <p>Expected Lifetime Value: {result.expected_lifetime_value}</p>
+              <div>
+                {/* Display the plots using the URLs received from the API */}
+                <img src={plotUrls.url_3} alt="Plot 1" />
+                <img src={plotUrls.url_1} alt="Plot 2" />
+                <img src={result.shap_plot} alt="Plot 3" />
+                <br />
+                <br />
+                <img src={plotUrls.url_2} alt="Plot 4" />
+              </div>
+              <div>
+                {/* Display the plots using the URLs received from the API */}
+                <img
+                  src={`data:image/png;base64,${result.gauge_plot}`}
+                  alt="Plot 1"
+                />
+                <img
+                  src={`data:image/png;base64,${result.hazard_plot}`}
+                  alt="Plot 2"
+                />
+                <img
+                  src={`data:image/png;base64,${result.survival_plot}`}
+                  alt="Plot 3"
+                />
+                <br />
+                <br />
+                <img
+                  src={`data:image/png;base64,${result.shap_plot}`}
+                  alt="Plot 4"
+                />
+              </div>
+            </div>
+          )}
         </div>
+
+        // <div>
+        //   {/* Display the API response here */}
+        //   <p>Churn Probability: {result.cltv}</p>
+        //   <p>Expected Lifetime Value: {result.expected_lifetime_value}</p>
+        //   <div>
+        //     {/* Display the plots using the URLs received from the API */}
+        //     <img src={plotUrls.url_3} alt="Plot 1" />
+        //     <img src={plotUrls.url_1} alt="Plot 2" />
+        //     <img src={result.shap_plot} alt="Plot 3" />
+        //     <br />
+        //     <br />
+        //     <img src={plotUrls.url_2} alt="Plot 4" />
+        //   </div>
+        //   <div>
+        //     {/* Display the plots using the URLs received from the API */}
+        //     <img
+        //       src={`data:image/png;base64,${result.gauge_plot}`}
+        //       alt="Plot 1"
+        //     />
+        //     <img
+        //       src={`data:image/png;base64,${result.hazard_plot}`}
+        //       alt="Plot 2"
+        //     />
+        //     <img
+        //       src={`data:image/png;base64,${result.survival_plot}`}
+        //       alt="Plot 3"
+        //     />
+        //     <br />
+        //     <br />
+        //     <img
+        //       src={`data:image/png;base64,${result.shap_plot}`}
+        //       alt="Plot 4"
+        //     />
+        //   </div>
+        // </div>
       )}
     </div>
   );

@@ -119,7 +119,7 @@ const LandingPage = () => {
                         alt="Card image cap"
                       />
                       {/* <h4 class="card-title"></h4> */}
-                      <Link className="btn btn-primary" to={"/trainTable"}>
+                      <Link className="btn btn-primary" to={"/feedback"}>
                         Feedback Analysis
                       </Link>
                     </div>
